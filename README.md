@@ -19,7 +19,7 @@ The specification is **royalty-free** and intended for use in both open-source a
 
 ## 2 · License and Usage
 
-- **License:** [CERN Open Hardware License v2](https://ohwr.org/project/cernohl)  
+- **License:** [CERN Open Hardware License v2](/LICENCE)  
 - You may use, modify, manufacture, and redistribute derivative works, provided attribution to **Drimit Labs** and compatibility with DL-OS specifications are maintained.  
 - Products implementing this standard are encouraged to display:  
   `Compatible with Drimit Link – Open Standard (DL-OS 1.x)`
