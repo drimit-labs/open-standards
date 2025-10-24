@@ -1,6 +1,6 @@
 # Drimit Link – Open Standard (DL-OS 1.0)
 **Version:** 1.0 · **Status:** Draft  
-**Author / Organization:** [Drimit Labs](https://github.com/drimit-labs)
+**Author / Organization:** [Drimit Labs](https://github.com/drimit-labs)  
 **License:** [CERN Open Hardware License v2](/LICENCE)  
 
 ---
