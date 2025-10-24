@@ -121,7 +121,7 @@ CANL ──60.4 Ω──┘──► GND
 
 **Implementation:** Baseboard provides fixed pull‑ups/pull‑downs (47–100 kΩ). MCU on module reads both pins and sets the crosspoint.
 
-#### 4.1.1 Orientation Detection Flow (Mermaid)
+#### 4.1.1 Orientation Detection Flow
 
 ```mermaid
 flowchart TD
@@ -180,27 +180,13 @@ set_display_rotation(rotateUI);
 - **Back‑iron (optional):** 0.5–1.0 mm mild steel plate under magnets.  
 - **Clearance to pogo grid:** ≥ 2.5 mm.
 
-#### 5.2.1 Magnet Layout (Mermaid)
-
-```mermaid
-graph TD
-    C((POGO 3x3)):::pogo
-    N((Magnet N)):::mag --- C
-    E((Magnet E)):::mag --- C
-    S((Magnet S)):::mag --- C
-    W((Magnet W)):::mag --- C
-classDef mag fill:#dde,stroke:#335,stroke-width:1px;
-classDef pogo fill:#efe,stroke:#393,stroke-width:1px;
-```
-
 ### 5.3 Screw Mounts
 
 - Positions: (± 9.5 mm, ± 9.5 mm).  
-- Holes: Ø 2.2 mm (M2) / Ø 2.7 mm (M2.5).  
+- Holes: Ø 2.7 mm (M2.5).  
 - Edge margin: ≥ 1.5 mm.  
-- Fasteners: A2/A4 stainless or brass (non‑magnetic).  
-- Torque: 0.2 N·m (M2) / 0.4 N·m (M2.5).  
-- **Heavy modules:** Prefer M2.5 + back‑iron + stronger magnets (N42/N52).
+- Fasteners: A4 stainless or brass (non‑magnetic).  
+- Torque: 0.4 N·m (M2.5).  
 
 ### 5.4 Planarity & Assembly
 
@@ -228,34 +214,8 @@ classDef pogo fill:#efe,stroke:#393,stroke-width:1px;
 
 ## 10 · Governance & Publication
 
-- **Repository:** `drimit-labs/drimit-link-open-connector-standard`  
+- **Repository:** `drimit-labs/drimit-link-open-standard`  
 - **Versioning:** Semantic Versioning (1.x = physical compatibility).  
 - **Change proposals:** via pull requests / public RFCs.  
 - **Maintainer:** **Drimit Labs**  
 - **Contact:** labs@drimit.io
-
----
-
-### Appendix A · Example Crosspoint Schematic (Mermaid)
-
-```mermaid
-flowchart LR
-    S1[(S1 - CANH?)] --/--> SW1{Dual SPDT} --A--> H[CANH to Transceiver]
-    S2[(S2 - CANL?)] --/--> SW1 --B--> L[CANL to Transceiver]
-    CTRL[SEL = ID1 XOR ID2] --> SW1
-    note over SW1: TS5A23157 / ADG772
-```
-
-### Appendix B · Example Backplane Slot Wiring (ASCII)
-
-```
-[TERM]───CANH==========================CANH==========================[TERM]
-        CANL==========================CANL
-             |     |     |     |     |
-            S1    S2    S3    S4    S5    (slots in parallel, short taps)
-
-V+  ===== eFuse ===+==== eFuse ===+==== eFuse ===+=== ...  (per-slot limiting)
-GND =====================================================  (solid plane)
-```
-
----
