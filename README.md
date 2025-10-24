@@ -1,7 +1,7 @@
 # Drimit Link – Open Standard (DL-OS 1.0)
 **Version:** 1.0 · **Status:** Draft  
 **Author / Organization:** Drimit Labs  
-**License:** CERN Open Hardware License v2
+**License:** [CERN Open Hardware License v2](/LICENCE)  
 
 ---
 
@@ -17,9 +17,8 @@ The specification is **royalty-free** and intended for use in both open-source a
 
 ---
 
-## 2 · License and Usage
+## 2 · Usage
 
-- **License:** [CERN Open Hardware License v2](/LICENCE)  
 - You may use, modify, manufacture, and redistribute derivative works, provided attribution to **Drimit Labs** and compatibility with DL-OS specifications are maintained.  
 - Products implementing this standard are encouraged to display:  
   `Compatible with Drimit Link – Open Standard (DL-OS 1.x)`
