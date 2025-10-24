@@ -83,28 +83,12 @@ A compliant base plate implements:
 - **ID1 / ID2 orientation networks** replicated per slot to provide Gray code (00/01/11/10) per DL‑CS 1.0.
 
 
-### 4.2 Linear Trunk Patterns (Matrix-Friendly)
+### 4.2 Linear Trunk Patterns
 
 To avoid stars, the trunk MUST be **topologically linear**. Two canonical patterns are defined:
 
 **Pattern A – Serpentine trunk (recommended for matrices ≥ 3×N):**  
 The trunk snakes left-to-right, then right-to-left across consecutive rows.
-
-```mermaid
-flowchart TB
-    subgraph Row1
-      A1 --- A2 --- A3 --- A4
-    end
-    subgraph Row2
-      B4 --- B3 --- B2 --- B1
-    end
-    subgraph Row3
-      C1 --- C2 --- C3 --- C4
-    end
-    A4 --- B4
-    B1 --- C1
-    %% Terminations placed at A1 and C4 (ends of the linear path)
-```
 
 **Pattern B – Perimeter loop with single linear chord (advanced):**  
 Route a perimeter loop and **open** one vertex to form a line, or add a **single chord** to convert the loop into a line. Use **jumpers** or **0‑Ω links** to select path ends during assembly.
@@ -261,39 +245,3 @@ A base plate **conforms** to this annex if it meets all MUSTs in §§ 3–6 and 
 
 **Recommended (SHOULD) Summary:**  
 - Split termination, via stitching near trunk, power zoning, jumper‑selectable termination sites, per‑slot test pads, and 4‑layer stack-up for large matrices.
-
-
----
-
-## 11. Informative Diagrams
-
-### 11.1 Serpentine Trunk Over 4×3 Matrix (Mermaid)
-
-```mermaid
-flowchart TB
-    subgraph Row1
-      A1["R1C1"] --- A2["R1C2"] --- A3["R1C3"] --- A4["R1C4"]
-    end
-    subgraph Row2
-      B4["R2C4"] --- B3["R2C3"] --- B2["R2C2"] --- B1["R2C1"]
-    end
-    subgraph Row3
-      C1["R3C1"] --- C2["R3C2"] --- C3["R3C3"] --- C4["R3C4"]
-    end
-    subgraph Row4
-      D4["R4C4"] --- D3["R4C3"] --- D2["R4C2"] --- D1["R4C1"]
-    end
-    A4 --- B4
-    B1 --- C1
-    C4 --- D4
-    %% Terminators at A1 and D1
-```
-
-### 11.2 Slot Tap Geometry (ASCII)
-
-```
-Trunk =======o==================o==================o======
-              \__ stub <=10mm    \__ stub <=10mm    \__ ...
-               \- S1/S2 pair      \- S1/S2 pair      \- S1/S2 pair
-```
-
