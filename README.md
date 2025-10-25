@@ -1,4 +1,4 @@
-# Drimit Link Open Standard - v1.0 - Draft
+# Drimit Link Open Standard v1.0 - Draft
 
 **The Complete Technical Specification**
 
