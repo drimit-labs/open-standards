@@ -1,4 +1,4 @@
-# Drimit Link Open Standard (DL-OS)
+# Drimit Link Open Standard (DL-OS) - v1.0 - Draft
 
 **The Complete Technical Specification**
 
