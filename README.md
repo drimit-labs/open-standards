@@ -44,7 +44,7 @@ See the [Table of Contents](SUMMARY.md) for detailed navigation.
 - **Status:** Draft
 - **License:** CC0 1.0 Universal  
 - **Last Updated:** October 2025
-- **Repository:** [drimit-labs/drimit-link-open-standard](https://github.com/drimit-labs/drimit-link-open-standard)
+- **Repository:** [drimit-labs/drimit-link-open-standard](https://github.com/drimit-labs/open-standards)
 
 ## Contributing
 
