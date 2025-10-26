@@ -42,7 +42,7 @@ See the [Table of Contents](SUMMARY.md) for detailed navigation.
 
 - **Version:** 1.0
 - **Status:** Draft
-- **License:** CERN Open Hardware License v2 - Permissive  
+- **License:** CC0 1.0 Universal  
 - **Last Updated:** October 2025
 - **Repository:** [drimit-labs/drimit-link-open-standard](https://github.com/drimit-labs/drimit-link-open-standard)
 
